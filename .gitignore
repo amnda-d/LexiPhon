@@ -1,0 +1,10 @@
+images/*.sif
+src/__pycache__
+data/wikipron
+data/wikipedia/split
+data/wikipedia/zip
+data/wikipedia/xpf
+*.cnt
+data/paranames
+*.pkl
+*_inv.txt

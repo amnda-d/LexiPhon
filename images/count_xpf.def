@@ -1,0 +1,58 @@
+Bootstrap: docker
+From: python:3.11-slim
+
+%files
+    src/count-articles.py /src/count-articles.py
+    src/count-wiki-long.py /src/count-wiki-long.py
+    src/filter-wikipedia.py /src/filter-wikipedia.py
+
+%post
+    apt-get update
+    apt-get install -y --no-install-recommends git
+    git clone https://github.com/CohenPr-XPF/XPF.git /XPF
+    pip install --upgrade pip
+    pip install scipy langcodes nltk smart_open tqdm sudachipy sudachidict_full
+    python -c "import nltk;nltk.download('punkt', download_dir='/usr/local/share/nltk_data');nltk.download('punkt_tab', download_dir='/usr/local/share/nltk_data')"
+
+%apprun xpf
+    infile=$1
+    outfile=$2
+    xpf_rules=$3
+    python /XPF/Code/translate04.py -l /XPF/Data/"$xpf_rules" -r $infile > $outfile
+
+%apprun count-articles
+    lang=$1
+    date=$2
+    python /src/count-articles.py\
+     --wiki /wikipedia/zip/"$lang"wiki-"$date".json.gz\
+     --outfile /wikipedia/"$lang"_articles.cnt
+
+%apprun countwiki
+    lang=$1
+    part=$2
+    date=$3
+    python /src/count-wiki-long.py\
+     --wiki /wikipedia/zip/"$lang"wiki-"$date".json.gz\
+     --lang "$lang"\
+     --outfile /wikipedia/"$lang".wiki.cnt\
+     --part "$part"
+
+%apprun combine
+    lang=$1
+    combine=$2
+    date=$3
+    python /src/count-wiki-long.py\
+     --wiki /wikipedia/zip/"$lang"wiki-"$date".json.gz\
+     --lang "$lang"\
+     --outfile /wikipedia/"$lang".wiki.cnt\
+     --part "$combine"\
+     --combine "$combine"
+
+%apprun filter
+    lang=$1
+    python /src/filter-wikipedia.py \
+    --wiki_dir /wikipedia/split/"$lang" \
+    --lang "$lang" \
+    --outfile /wikipedia/filtered/"$lang"_filtered.tsv \
+    --inv_outfile /wikipedia/filtered/"$lang"_inv.txt \
+    --entities_list /paranames/paranames_list

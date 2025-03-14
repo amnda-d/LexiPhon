@@ -1,0 +1,14 @@
+Bootstrap: docker
+From: python:3.11-slim
+
+%post
+    pip install --upgrade pip
+    pip install scipy==1.10.1
+    pip install gensim
+
+%apprun wikipedia
+    lang=$1
+    date=$2
+    python -m gensim.scripts.segment_wiki -i\
+    -f /wikipedia/zip/"$lang".xml.bz2\
+    -o /wikipedia/zip/"$lang"wiki-"$date".json.gz

@@ -1,0 +1,88 @@
+Language	UniMorph	Epitran	Northeuralex	CharsiuG2P	XPF	Wikipedia	WikiPron
+Adyghe	ady		ady	ady		ady	ady_cyrl_narrow_filtered.tsv
+Afrikaans	afr			afr		af	afr_latn_broad_filtered.tsv
+Albanian	sqi	sqi-Latn	sqi	sqi	sq_Albanian/sq.rules	sq	sqi_latn_broad.tsv
+Amharic	amh	amh-Ethi		amh		am	amh_ethi_broad.tsv
+Arabic	ara	ara-Arab	arb	ara		ar	ara_arab_broad.tsv
+Armenian	hye		hye	arm-e	hy_Armenian/hy.rules	hy	hye_armn_e_broad.tsv
+Assamese	asm					as	asm_beng_broad.tsv
+Asturian	ast				ast_Asturian/ast.rules	ast	ast_latn_broad.tsv
+Aymara	aym				ay_Aymara/ay.rules	ay	
+Azerbaijani	aze	aze-Latn	azj	aze	az_Azerbaijani/az.rules	az	aze_latn_narrow_filtered.tsv
+Bashkir	bak		bak	bak	ba_Bashkir/ba.rules	ba	bak_cyrl_narrow.tsv
+Basque	eus		eus	eus	eu_Basque/eu.rules	eu	eus_latn_broad.tsv
+Belarusan	bel		bel	bel	be_Belarusan/be.rules	be	bel_cyrl_narrow.tsv
+Bengali	ben	ben-Beng	ben	ben		bn	ben_beng_rarh_broad_filtered.tsv
+Bulgarian	bul		bul	bul	bg_Bulgarian/bg.rules	bg	bul_cyrl_narrow.tsv
+Catalan	cat	cat-Latn	cat	cat		ca	cat_latn_narrow.tsv
+Cebuano	ceb	ceb-Latn				ceb	ceb_latn_broad.tsv
+Chewa	nya	nya-Latn				ny	nya_latn_broad.tsv
+Crimean Tatar	crh				crh_CrimeanTatar/crh.rules	crh	
+Cusco Quechua	que				quz_CuscoQuechua/quz.rules	qu	
+Czech	ces	ces-Latn	ces	cze	cs_Czech/cs.rules	cs	ces_latn_narrow.tsv
+Danish	dan		dan	dan		da	dan_latn_broad.tsv
+Dutch	nld	nld-Latn	nld	dut		nl	nld_latn_broad_filtered.tsv
+Egyptian Arabic	arz			egy		arz	arz_arab_broad.tsv
+English	eng	eng-Latn	eng	eng-us		en	eng_latn_us_broad_filtered.tsv
+Estonian	est		ekk	est		et	est_latn_broad.tsv
+Faroese	fao					fo	fao_latn_broad.tsv
+Finnish	fin		fin	fin		fi	fin_latn_broad.tsv
+French	fra	fra-Latn	fra	fra		fr	fra_latn_broad_filtered.tsv
+Galician	gal			glg		gl	glg_latn_broad.tsv
+Georgian	kat		kat	geo	ka_Georgian/ka.rules	ka	kat_geor_broad_filtered.tsv
+German	deu	deu-Latn	deu	ger		de	deu_latn_broad_filtered.tsv
+Greek	ell		ell	gre	el_Greek/el.rules	el	ell_grek_broad_filtered.tsv
+Gujarati	guj			guj		gu	guj_gujr_broad.tsv
+Hindi	hin	hin-Deva	hin	hin		hi	hin_deva_broad_filtered.tsv
+Hungarian	hun	hun-Latn	hun	hun	hu_Hungarian/hu.rules	hu	hun_latn_narrow_filtered.tsv
+Icelandic	isl		isl	ice		is	isl_latn_broad_filtered.tsv
+Indonesian	ind	ind-Latn		ind		id	ind_latn_broad.tsv
+Irish	gle		gle	gle		ga	gle_latn_broad.tsv
+Italian	ita	ita-Latn	ita	ita		it	ita_latn_broad_filtered.tsv
+Japanese	jpn		jpn	jpn		ja	jpn_hira_narrow_filtered.tsv
+Kabardian	kbd	kbd-Cyrl			kbd_Kabardian/kbd.rules	kbd	kbd_cyrl_narrow.tsv
+Kalaallisut	kal		kal		kl_Kalaallisut/kl.rules	kl	kal_latn_broad.tsv
+Kannada	kan		kan		kn_Kannada/kn.rules	kn	kan_knda_broad.tsv
+Kashubian	csb	csb-Latn				csb	csb_latn_broad.tsv
+Kazakh	kaz	kaz-Cyrl	kaz	kaz		kk	kaz_cyrl_narrow.tsv
+Khalkha Mongolian	khk	mon-Cyrl-bab	khk			mn	mon_cyrl_broad.tsv
+Kirghiz	kir	kir-Cyrl			ky_Kirghiz/ky.rules	ky	kir_cyrl_broad.tsv
+Korean	kor		kor	kor	ko_Korean/ko.rules	ko	kor_hang_narrow_filtered.tsv
+Lithuanian	lit		lit	lit		lt	lit_latn_narrow.tsv
+Lower Sorbian	dsb					dsb	dsb_latn_broad.tsv
+Macedonian	mkd			mac	mk_Macedonian/mk.rules	mk	mkd_cyrl_narrow.tsv
+Malagasy	mlg				mg_Malagasy/mg.rules	mg	mlg_latn_broad.tsv
+Maltese	mlt	mlt-Latn		mlt		mt	mlt_latn_broad_filtered.tsv
+Maori	mao	mri-Latn				mi	
+Northern Kurdish (Kurmanji)	kmr		kmr	kur		ku	kmr_latn_broad.tsv
+Northern Sami	sme		sme	sme		se	sme_latn_broad.tsv
+Norwegian Bokmål	nob		nor	nob		no	nob_latn_broad_filtered.tsv
+Oromo	orm	orm-Latn				om	
+Pashto	pus		pbu			ps	pus_arab_broad.tsv
+Persian	fas	fas-Arab	pes	fas		fa	fas_arab_narrow.tsv
+Polish	pol	pol-Latn	pol	pol		pl	pol_latn_broad.tsv
+Portuguese	por	por-Latn	por	por-bz		pt	por_latn_bz_broad_filtered.tsv
+Romanian	ron	ron-Latn	ron	ron	ro_Romanian/ro.rules	ro	ron_latn_broad.tsv
+Russian	rus	rus-Cyrl	rus	rus		ru	rus_cyrl_narrow.tsv
+Scottish Gaelic	gla			gla		gd	gla_latn_broad.tsv
+Serbo-Croatian	hbs	hrv-Latn	hrv	hbs-latn		sh	hbs_latn_broad_filtered.tsv
+Shona	sna	sna-Latn				sn	
+Slovenian	slv		slv	slv		sl	slv_latn_broad_filtered.tsv
+Spanish	spa	spa-Latn	spa	spa		es	spa_latn_ca_broad_filtered.tsv
+Swahili	swc	swa-Latn		swa		sw	swa_latn_broad.tsv
+Swedish	swe	swe-Latn	swe	swe		sv	swe_latn_broad.tsv
+Tagalog	tgl			tgl		tl	tgl_latn_broad.tsv
+Tajik	tgk	tgk-Cyrl			tg_Tajik/tg.rules	tg	tgk_cyrl_broad.tsv
+Tatar	tat		tat	tat	tt_Tatar/tt-cyrillic.rules	tt	
+Telugu	tel	tel-Telu	tel		te_Telugu/te.rules	te	tel_telu_broad.tsv
+Turkish	tur	tur-Latn	tur	tur	tr_Turkish/tr.rules	tr	tur_latn_broad.tsv
+Turkmen	tuk	tuk-Latn		tuk		tk	tuk_latn_broad.tsv
+Tuvan	tyv				tyv_Tuvan/tyv.rules	tyv	tyv_cyrl_broad.tsv
+Ukrainian	ukr	ukr-Cyrl	ukr	ukr	uk_Ukrainian/uk.rules	uk	ukr_cyrl_narrow.tsv
+Upper Sorbian	hsb				hsb_UpperSorbian/hsb.rules	hsb	hsb_latn_broad.tsv
+Urdu	urd	urd-Arab				ur	urd_arab_broad.tsv
+Uyghur	uig	uig-Arab			ug_Uyghur/ug.rules	ug	uig_arab_broad.tsv
+Uzbek	uzb	uzb-Latn	uzn		uz_Uzbek/uz.rules	uz	
+Welsh	cym		cym	wel-sw		cy	cym_latn_sw_broad_filtered.tsv
+West Frisian	fry					fy	fry_latn_broad.tsv
+Zulu	zul	zul-Latn				zu	zul_latn_broad.tsv

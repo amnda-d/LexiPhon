@@ -1,0 +1,31 @@
+Bootstrap: docker
+From: pytorch/pytorch
+
+%files
+    src/data_to_ipa.py /src/data_to_ipa.py
+    src/get_lang_code.py /src/get_lang_code.py
+    languages.tsv   /languages.tsv
+
+%post
+    apt-get update
+    apt-get install -y --no-install-recommends git wget tar gcc make
+    pip install --upgrade pip
+    pip install transformers pandas epitran==1.24 tqdm jamo g2pk
+    pip install git+https://github.com/seonghobae/ipapy.git@c8ddb1213004b27a6e692e704d2faf26d65c9f10
+    python -c "from transformers import T5ForConditionalGeneration, AutoTokenizer;model = T5ForConditionalGeneration.from_pretrained('charsiu/g2p_multilingual_byT5_tiny_16_layers_100');model.save_pretrained('/charsiu');tokenizer = AutoTokenizer.from_pretrained('google/byt5-small');tokenizer.save_pretrained('/charsiu_token')"
+    wget https://github.com/festvox/flite/archive/refs/tags/v2.2.tar.gz -P /flite
+    cd /flite
+    ls
+    tar zxvf v2.2.tar.gz
+    cd flite-2.2
+    ./configure && make
+    cd testsuite
+    make lex_lookup
+    cp lex_lookup /usr/local/bin
+
+%apprun g2p
+    file=$1
+    lang=$2
+    wikipron=$3
+    xpf=$4
+    python /src/data_to_ipa.py --file $file --lang $lang --wikipron_path $wikipron --xpf_path $xpf
